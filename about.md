@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Professor of Chemistry, Shawnee State University. Real Ale fan. Chemistry nerd. Power BI, SharePoint, and Power Platform geek.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Shawnee State University [Profile](https://www.shawnee.edu/areas-study/college-arts-and-sciences/natural-sciences/department-natural-sciences-faculty/andrew-m) page.
 
 ### Contact me
 
