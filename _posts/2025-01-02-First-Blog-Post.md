@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Some notes on BASH
+date: 2025-01-02 15:00:00 -0500
+categories: [unix]
+tags: [unix, bash, shell]
+toc: true
 ---
 
 ## Personal notes on using BASH (Exported from Obsidian)
