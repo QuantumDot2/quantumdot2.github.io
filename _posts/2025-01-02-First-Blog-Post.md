@@ -75,7 +75,7 @@ is issued, then the shell will execute: `date` then sleep for 4 seconds, then ex
 
 The commands inside of `( command1; command2; ...)` are run inside a subshell.
 
-# Piping data
+## Piping data
 
 Can send the standard output of a command to another command by piping!
 
@@ -85,7 +85,7 @@ date | wc
 
 This takes the stdout of `date` and sends it to `wc`.
 
-## Tee
+### Tee
 
 Can `tee` the flow of data to send it to a file, like:
 
@@ -93,7 +93,7 @@ Can `tee` the flow of data to send it to a file, like:
 date | tee date_output.txt | wc
 ```
 
-# Redirection
+### Redirection
 
 Can redirect stdout using `>`. For example:
 
@@ -101,7 +101,7 @@ Can redirect stdout using `>`. For example:
 date >date_output.txt
 ```
 
-## Redirection and append
+### Redirection and append
 
 Use `>>` to append stdout. For example:
 
@@ -111,20 +111,20 @@ date >>date_output.txt
 
 keeps adding to the end of the output file!
 
-# Shell special character:`*`
+## Shell special character:`*`
 
 The shell replaces `*` with the name of all files (that don't start with a `.`) in the current directory. The program that receives the `*` doesn't know anything about a `*`, the shell just grabs matching filenames and feeds it to the command.
 
-## Other shell special characters: `[a-c]`, `[abce]`, etc.
+### Other shell special characters: `[a-c]`, `[abce]`, etc.
 
 These can be used to match ranges, such as `ls [a-c]*` will list all files that start with a, b, or c.
 `ls [abce]*` will list files that start with a, b, c, or e - etc.
 
-## Other shell special characters: `?`
+### Other shell special characters: `?`
 
 A question mark `?` will match a **single** character.
 
-# Variable assignment
+## Variable assignment
 
 Can simple say `var=var_value` to assign to the variable `var` the value `var_value`.
 
@@ -135,11 +135,11 @@ echo $var1 '- right??'
 echo "$var1 - also doubly so"
 ```
 
-# Sub-Shells
+## Sub-Shells
 
 Commands run in `backticks` or parenthesis, or as part of a pipeline, are run in a separate sub-shell. The parent shell spawns a sub-shell - any variables created in the sub-shell are unavailable in the parent shell. Also, if the parent shell sets any variables after the sub-shell process kicks off, they will be unavailable to the sub-shell.
 
-# Back-ticks & running programs
+## Back-ticks & running programs
 
 When running programs and using the output to feed another program, the line-feed characters get converted into word separators. For example, let's say you have a file:
 
