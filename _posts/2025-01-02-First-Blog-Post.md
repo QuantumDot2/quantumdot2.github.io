@@ -1,9 +1,9 @@
 ---
 layout: post
-title: First Blog Post!
+title: Some notes on BASH
 ---
 
-# Some notes on using BASH (Exported from Obsidian)
+## Personal notes on using BASH (Exported from Obsidian)
 
 BASH = Bourne again shell.
 
